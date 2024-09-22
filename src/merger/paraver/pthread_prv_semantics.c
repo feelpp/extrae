@@ -62,7 +62,8 @@ static int pthread_Call (event_t * current_event, unsigned long long current_tim
 	unsigned int thread, FileSet_t *fset )
 {
 	unsigned int EvType, nEvType;
-	UINT64 EvValue, nEvValue;
+	UINT64 EvValue;
+	long long unsigned int nEvValue;
 	UNREFERENCED_PARAMETER(fset);
 
 	EvType  = Get_EvEvent (current_event);
